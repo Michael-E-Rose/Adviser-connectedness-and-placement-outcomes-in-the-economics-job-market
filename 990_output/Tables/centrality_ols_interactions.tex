@@ -1,0 +1,48 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} \\
+                              	&\multicolumn{1}{c}{Placement score}\\
+\midrule
+PhD school rank               	&         -0.009         \\
+                              	&        (0.024)         \\
+\addlinespace
+Adviser centrality            	&         -0.126         \\
+                              	&        (0.178)         \\
+\addlinespace
+PhD school rank $\times$      	&          0.008\sym{**} \\
+Adviser centrality            	&        (0.003)         \\
+\addlinespace
+PhD school rank               	&          0.000         \\
+                              	&        (0.000)         \\
+\addlinespace
+PhD school rank$^2$           	&          0.000         \\
+                              	&        (0.000)         \\
+\addlinespace
+PhD school rank$^3$           	&         -0.000         \\
+                              	&        (0.000)         \\
+\addlinespace
+Adviser Euclid                	&         -0.001         \\
+                              	&        (0.003)         \\
+\addlinespace
+Student female                	&         -0.513         \\
+                              	&        (0.780)         \\
+\addlinespace
+Constant                      	&        -22.171         \\
+                              	&       (20.321)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         \\
+\midrule
+N                             	&            579         \\
+\# of advisers                	&            194         \\
+\bottomrule
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

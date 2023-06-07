@@ -1,0 +1,38 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} \\
+                              	&\multicolumn{1}{c}{Placed student}	&\multicolumn{1}{c}{Placed student}	&\multicolumn{1}{c}{Placed student}\\
+\midrule
+Increase in social distance   	&         -0.002\sym{***}	&         -0.002\sym{***}	&         -0.005\sym{**} \\
+after death                   	&        (0.000)         	&        (0.001)         	&        (0.002)         \\
+\addlinespace
+Social distance before death  	&         -0.001\sym{***}	&         -0.001\sym{***}	&         -0.002\sym{***}\\
+                              	&        (0.000)         	&        (0.000)         	&        (0.000)         \\
+\addlinespace
+Citation distance             	&         -0.001\sym{***}	&         -0.001\sym{**} 	&         -0.002\sym{***}\\
+                              	&        (0.000)         	&        (0.000)         	&        (0.001)         \\
+\addlinespace
+Adviser Euclid                	&          0.000         	&          0.000         	&          0.000         \\
+                              	&        (0.000)         	&        (0.000)         	&        (0.000)         \\
+\addlinespace
+PhD school score              	&          0.000         	&          0.000         	&         -0.000         \\
+                              	&        (0.000)         	&        (0.000)         	&        (0.000)         \\
+\addlinespace
+Placement score               	&          0.000\sym{***}	&          0.000\sym{***}	&          0.000\sym{***}\\
+                              	&        (0.000)         	&        (0.000)         	&        (0.000)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&        403,061         	&        237,652         	&         89,710         \\
+\# of advisers                	&            531         	&            531         	&            385         \\
+Mean                          	&          0.002         	&          0.003         	&          0.006         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

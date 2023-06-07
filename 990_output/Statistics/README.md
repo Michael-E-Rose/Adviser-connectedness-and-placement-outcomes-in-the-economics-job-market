@@ -1,0 +1,1 @@
+Files containing specific statistics to be used in LaTeX files. `00_aggregate.sh` aggregates all content into the LaTeX document `placement_statistics.tex`, which is then ready to use in an LaTeX project. The LaTeX command name follows the filename.

@@ -1,0 +1,53 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} \\
+                              	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}\\
+\midrule
+Adviser centrality            	&          0.494         	&          0.560\sym{*}  	&          0.513         \\
+                              	&        (0.362)         	&        (0.314)         	&        (0.333)         \\
+\addlinespace
+Adviser Euclid                	&          0.025\sym{***}	&          0.001         	&          0.001         \\
+                              	&        (0.010)         	&        (0.006)         	&        (0.004)         \\
+\addlinespace
+Adviser experience            	&         -0.700         	&         -0.234         	&          0.031         \\
+                              	&        (0.476)         	&        (0.421)         	&        (0.370)         \\
+\addlinespace
+Adviser experience $\times$   	&         -0.001\sym{***}	&                        	&                        \\
+Adviser Euclid                	&        (0.000)         	&                        	&                        \\
+\addlinespace
+Adv. experience$^2$           	&          0.014         	&         -0.005         	&         -0.004         \\
+                              	&        (0.011)         	&        (0.010)         	&        (0.009)         \\
+\addlinespace
+Student female                	&         -0.372         	&         -0.384         	&         -0.359         \\
+                              	&        (0.593)         	&        (0.608)         	&        (0.590)         \\
+\addlinespace
+PhD school rank               	&         -0.001         	&         -0.001         	&         -0.001         \\
+                              	&        (0.003)         	&        (0.003)         	&        (0.003)         \\
+\addlinespace
+Adviser Euclid quartile=2     	&                        	&          0.325         	&                        \\
+$\times$ Adviser experience   	&                        	&        (0.313)         	&                        \\
+\addlinespace
+Adviser Euclid quartile=3     	&                        	&          0.499         	&                        \\
+$\times$ Adviser experience   	&                        	&        (0.345)         	&                        \\
+\addlinespace
+Adviser Euclid quartile=4     	&                        	&          0.307         	&                        \\
+$\times$ Adviser experience   	&                        	&        (0.489)         	&                        \\
+\addlinespace
+Constant                      	&          5.556         	&          9.166         	&         -0.798         \\
+                              	&        (4.156)         	&        (6.328)         	&        (1.602)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            579         	&            579         	&            579         \\
+\# of advisers                	&            194         	&            194         	&            194         \\
+Effective F                   	&           16.3         	&           17.7         	&           17.4         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

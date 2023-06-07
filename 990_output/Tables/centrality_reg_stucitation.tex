@@ -1,0 +1,40 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} \\
+                              	&\multicolumn{1}{c}{5-year student citations}	&\multicolumn{1}{c}{5-year student citations}	&\multicolumn{1}{c}{5-year student citations}\\
+\midrule
+Adviser centrality            	&          4.270\sym{**} 	&          4.218\sym{***}	&          5.496\sym{**} \\
+                              	&        (1.858)         	&        (1.438)         	&        (2.755)         \\
+\addlinespace
+Adviser Euclid                	&         -0.002         	&         -0.003         	&          0.005         \\
+                              	&        (0.037)         	&        (0.029)         	&        (0.027)         \\
+\addlinespace
+Student female                	&         -7.414         	&         -7.638\sym{**} 	&         -7.661\sym{***}\\
+                              	&        (4.499)         	&        (3.573)         	&        (2.450)         \\
+\addlinespace
+PhD school rank               	&          0.033         	&          0.032         	&          0.031         \\
+                              	&        (0.089)         	&        (0.069)         	&        (0.048)         \\
+\addlinespace
+Placement rank                	&         -0.000         	&          0.000         	&          0.000         \\
+                              	&        (0.004)         	&        (0.003)         	&        (0.002)         \\
+\addlinespace
+Constant                      	&         -4.350         	&       -463.755\sym{***}	&       -433.708\sym{***}\\
+                              	&       (24.360)         	&      (130.012)         	&      (133.934)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            897         	&            481         	&            481         \\
+\# of advisers                	&            111         	&             68         	&             68         \\
+Effective F                   	&                        	&                        	&           16.1         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

@@ -1,0 +1,37 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} \\
+                              	&\multicolumn{1}{c}{Social distance adviser to placement}	&\multicolumn{1}{c}{Social distance adviser to placement}\\
+\midrule
+Adviser centrality            	&         -0.432         	&         -0.336         \\
+                              	&        (0.269)         	&        (0.258)         \\
+\addlinespace
+Adviser Euclid                	&         -0.002         	&         -0.002         \\
+                              	&        (0.002)         	&        (0.002)         \\
+\addlinespace
+Student female                	&         -0.351         	&         -0.353         \\
+                              	&        (0.252)         	&        (0.251)         \\
+\addlinespace
+PhD school rank               	&          0.001         	&          0.000         \\
+                              	&        (0.005)         	&        (0.004)         \\
+\addlinespace
+Constant                      	&          3.642\sym{***}	&          3.644\sym{***}\\
+                              	&        (0.421)         	&        (0.413)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            426         	&            426         \\
+\# of advisers                	&            180         	&            180         \\
+Effective F                   	&            6.8         	&            2.9         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

@@ -1,0 +1,46 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} \\
+                              	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}\\
+\midrule
+Adviser centrality            	&          0.706\sym{**} 	&          1.001\sym{**} \\
+                              	&        (0.298)         	&        (0.400)         \\
+\addlinespace
+Citation growth rate 96-99    	&          4.290         	&          3.355         \\
+                              	&        (4.154)         	&        (4.642)         \\
+\addlinespace
+Citation growth past 3 years  	&         -0.138         	&         -0.136         \\
+                              	&        (0.096)         	&        (0.097)         \\
+\addlinespace
+Citation growth last year     	&          0.223         	&          0.227         \\
+                              	&        (0.160)         	&        (0.160)         \\
+\addlinespace
+Adviser Euclid                	&          0.003         	&          0.005         \\
+                              	&        (0.003)         	&        (0.004)         \\
+\addlinespace
+Student female                	&         -0.574         	&         -0.580         \\
+                              	&        (0.591)         	&        (0.599)         \\
+\addlinespace
+PhD school rank               	&         -0.004         	&         -0.004         \\
+                              	&        (0.005)         	&        (0.005)         \\
+\addlinespace
+Constant                      	&          6.615         	&          7.589         \\
+                              	&        (4.370)         	&        (4.829)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            579         	&            579         \\
+\# of advisers                	&            194         	&            194         \\
+Effective F                   	&           15.6         	&            8.7         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

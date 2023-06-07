@@ -1,0 +1,40 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} 	&\multicolumn{1}{c}{(4)} \\
+                              	&\multicolumn{1}{c}{Adviser degree}	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}\\
+\midrule
+Adviser degree                	&                        	&          8.223         	&         -0.104         	&                        \\
+                              	&                        	&       (20.895)         	&        (0.137)         	&                        \\
+\addlinespace
+Adviser neigh. mean degree    	&         -0.050         	&                        	&                        	&         -0.414         \\
+                              	&        (0.171)         	&                        	&                        	&        (0.253)         \\
+\addlinespace
+Adviser Euclid                	&          0.003         	&         -0.024         	&         -0.001         	&         -0.001         \\
+                              	&        (0.003)         	&        (0.058)         	&        (0.002)         	&        (0.002)         \\
+\addlinespace
+Student female                	&         -0.138         	&          0.511         	&         -0.615         	&         -0.620         \\
+                              	&        (0.212)         	&        (3.055)         	&        (0.766)         	&        (0.755)         \\
+\addlinespace
+PhD school rank               	&          0.004         	&         -0.032         	&         -0.003         	&         -0.001         \\
+                              	&        (0.005)         	&        (0.079)         	&        (0.007)         	&        (0.007)         \\
+\addlinespace
+Constant                      	&         15.895\sym{***}	&       -119.666         	&         13.842\sym{***}	&         11.041\sym{**} \\
+                              	&        (3.077)         	&      (334.153)         	&        (5.045)         	&        (4.580)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            574         	&            574         	&            574         	&            574         \\
+\# of advisers                	&                        	&            194         	&            194         	&            194         \\
+Effective F                   	&                        	&            0.1         	&                        	&                        \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

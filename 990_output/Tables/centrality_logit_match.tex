@@ -1,0 +1,40 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} 	&\multicolumn{1}{c}{(4)} \\
+                              	&\multicolumn{1}{c}{Same affiliation 6 years later}	&\multicolumn{1}{c}{Same affiliation 6 years later}	&\multicolumn{1}{c}{Same affiliation 7 years later}	&\multicolumn{1}{c}{Same affiliation 7 years later}\\
+\midrule
+main                          	&                        	&                        	&                        	&                        \\
+Adviser centrality            	&         -0.123         	&          0.026         	&         -0.105         	&          0.029         \\
+                              	&        (0.193)         	&        (0.056)         	&        (0.160)         	&        (0.052)         \\
+\addlinespace
+Adviser Euclid                	&         -0.002         	&         -0.000         	&         -0.002         	&         -0.000         \\
+                              	&        (0.003)         	&        (0.000)         	&        (0.003)         	&        (0.000)         \\
+\addlinespace
+Student female                	&         -0.474         	&         -0.006         	&         -0.217         	&         -0.138         \\
+                              	&        (0.447)         	&        (0.167)         	&        (0.379)         	&        (0.177)         \\
+\addlinespace
+PhD school score              	&         -0.001         	&          0.000         	&         -0.001         	&          0.000         \\
+                              	&        (0.001)         	&        (0.000)         	&        (0.001)         	&        (0.000)         \\
+\addlinespace
+Placement score               	&          0.000         	&         -0.000         	&          0.000         	&         -0.000         \\
+                              	&        (0.000)         	&        (0.000)         	&        (0.000)         	&        (0.000)         \\
+\addlinespace
+Constant                      	&         15.206         	&          1.651\sym{**} 	&          8.646\sym{**} 	&          1.726\sym{**} \\
+                              	&       (12.168)         	&        (0.839)         	&        (4.231)         	&        (0.724)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&                        	&     \checkmark         	&                        \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            305         	&            970         	&            312         	&            949         \\
+\# of advisers                	&             92         	&            616         	&             94         	&            609         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

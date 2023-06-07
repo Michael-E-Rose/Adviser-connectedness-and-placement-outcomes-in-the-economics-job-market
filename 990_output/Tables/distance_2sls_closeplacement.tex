@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} 	&\multicolumn{1}{c}{(4)} \\
+                              	&\multicolumn{1}{c}{Distance to placement < 5}	&\multicolumn{1}{c}{Distance to placement < 5}	&\multicolumn{1}{c}{Social distance after death}	&\multicolumn{1}{c}{Social distance after death}\\
+\midrule
+Adviser centrality            	&                        	&          0.155\sym{*}  	&                        	&         -0.385         \\
+                              	&                        	&        (0.081)         	&                        	&        (0.268)         \\
+\addlinespace
+Adviser's coauthors centrality	&          0.221         	&                        	&         -0.548         	&                        \\
+                              	&        (0.164)         	&                        	&        (0.562)         	&                        \\
+\addlinespace
+Adviser Euclid                	&         -0.001         	&          0.000         	&         -0.000         	&         -0.002         \\
+                              	&        (0.001)         	&        (0.001)         	&        (0.002)         	&        (0.002)         \\
+\addlinespace
+PhD school score              	&         -0.000         	&         -0.000         	&          0.001         	&          0.001         \\
+                              	&        (0.000)         	&        (0.000)         	&        (0.001)         	&        (0.001)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            777         	&            777         	&            777         	&            777         \\
+\# of advisers                	&            519         	&            519         	&            519         	&            519         \\
+Effective F                   	&                        	&            4.2         	&                        	&            4.2         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

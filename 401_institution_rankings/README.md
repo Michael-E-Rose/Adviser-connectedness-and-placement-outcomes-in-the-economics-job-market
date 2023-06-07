@@ -1,0 +1,1 @@
+Rankings of institutions of unweighted and weighted publication counts in the set of journal defined by the Tilburg Economics Ranking.  Weights correspond to the Scimago JIF of that year or the previous year (s) if not available.

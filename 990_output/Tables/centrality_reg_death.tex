@@ -1,0 +1,52 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} 	&\multicolumn{1}{c}{(3)} \\
+                              	&\multicolumn{1}{c}{Adviser centrality}	&\multicolumn{1}{c}{Placement score}	&\multicolumn{1}{c}{Placement score}\\
+\midrule
+Adviser centrality            	&                        	&          0.822\sym{***}	&                        \\
+                              	&                        	&        (0.263)         	&                        \\
+\addlinespace
+Adviser's coauthors centrality	&          1.415\sym{***}	&                        	&                        \\
+                              	&        (0.343)         	&                        	&                        \\
+\addlinespace
+Change in centrality due to   	&                        	&                        	&          0.103         \\
+death                         	&                        	&                        	&        (0.157)         \\
+\addlinespace
+Adviser Euclid                	&         -0.005         	&          0.003         	&         -0.002         \\
+                              	&        (0.004)         	&        (0.003)         	&        (0.003)         \\
+\addlinespace
+Coauthor died                 	&         -0.838         	&          1.453         	&                        \\
+                              	&        (0.828)         	&        (1.194)         	&                        \\
+\addlinespace
+Second neighbour died         	&          0.053         	&          0.821         	&                        \\
+                              	&        (0.215)         	&        (0.897)         	&                        \\
+\addlinespace
+Third neighbour died          	&          0.023         	&          1.164\sym{**} 	&                        \\
+                              	&        (0.229)         	&        (0.589)         	&                        \\
+\addlinespace
+Student female                	&          0.055         	&         -0.611         	&         -0.620         \\
+                              	&        (0.108)         	&        (0.584)         	&        (0.748)         \\
+\addlinespace
+PhD school rank               	&         -0.002         	&         -0.003         	&         -0.003         \\
+                              	&        (0.002)         	&        (0.005)         	&        (0.007)         \\
+\addlinespace
+Constant                      	&        -14.915         	&        -10.584         	&         12.177\sym{***}\\
+                              	&       (19.625)         	&       (20.869)         	&        (4.304)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            574         	&            574         	&            572         \\
+\# of advisers                	&                        	&            194         	&            193         \\
+Effective F                   	&                        	&           17.0         	&                        \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

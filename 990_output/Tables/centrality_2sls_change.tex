@@ -1,0 +1,40 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{D{.}{.}{-1}}}
+\toprule
+                              	&\multicolumn{1}{c}{(1)} 	&\multicolumn{1}{c}{(2)} \\
+                              	&\multicolumn{1}{c}{Second plc worse than first}	&\multicolumn{1}{c}{Rank difference}\\
+\midrule
+Adviser centrality            	&          0.079         	&        -53.652         \\
+                              	&        (0.078)         	&       (67.624)         \\
+\addlinespace
+Adviser Euclid                	&          0.002\sym{***}	&          0.756\sym{**} \\
+                              	&        (0.001)         	&        (0.367)         \\
+\addlinespace
+Student female                	&         -0.081         	&       -248.986\sym{***}\\
+                              	&        (0.137)         	&       (84.135)         \\
+\addlinespace
+PhD school score              	&         -0.000         	&          0.968\sym{**} \\
+                              	&        (0.000)         	&        (0.494)         \\
+\addlinespace
+Placement score               	&          0.000\sym{***}	&          0.228\sym{**} \\
+                              	&        (0.000)         	&        (0.104)         \\
+\addlinespace
+Constant                      	&         -1.024         	&       3788.264\sym{***}\\
+                              	&        (2.538)         	&      (666.014)         \\
+\addlinespace
+Adviser FE                    	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Adviser experience FE         	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Field FE                      	&     \checkmark         	&     \checkmark         \\
+\addlinespace
+Graduation year FE            	&     \checkmark         	&     \checkmark         \\
+\midrule
+N                             	&            232         	&            189         \\
+\# of advisers                	&            140         	&            123         \\
+Effective F                   	&            2.4         	&            0.9         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

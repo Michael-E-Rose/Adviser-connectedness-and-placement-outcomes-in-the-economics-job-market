@@ -1,0 +1,15 @@
+beautifulsoup4==4.12.2
+Cartopy==0.21.0
+Genderize==0.3.1
+matplotlib==3.7.1
+networkx==2.6.3
+num2words==0.5.10
+numpy==1.17.4
+pandas==2.0.0
+pybliometrics==3.5.1
+pycountry==22.3.5
+requests==2.22.0
+scholarmetrics==0.2.2
+scipy==1.8.0
+seaborn==0.11.2
+tqdm==4.30.0
